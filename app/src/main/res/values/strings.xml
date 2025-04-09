@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Vehicle Gallery</string>
+    <string name="detail_screen_name">Details</string>
+    <string name="empty_state_gallery">No images to display in gallery</string>
+    <string name="error_loading_images">Failed to load images</string>
+    <string name="empty_state_detail">"High-resolution image not available"</string>
+    <string name="retry">Retry</string>
+</resources>
