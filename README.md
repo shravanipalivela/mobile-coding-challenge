@@ -29,6 +29,10 @@ The **Vehicle Gallery App** follows modern Android development best practices wi
 4. **Listing ID**:  
    The listing ID is retrieved from a different module. It is passed as an input parameter in the remote data source to the API request.
 
+## Future Implementations For App
+
+1. Room database - to avoid multiple calls to the API. The data can then be retrieved into the repository. During internet connection issues, the data in the local database can be used as a fallback.
+
 ---
 
 ## Testing Approach

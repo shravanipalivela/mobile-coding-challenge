@@ -28,8 +28,7 @@ class VehicleGalleryUseCaseTest {
     fun `test getVehicleGalleryImages should return transformed data successfully`(): Unit = runBlocking {
         // Given
         val vehicleDto = VehicleDto(
-            title = "Test Vehicle",
-            price = null,
+            id = 285041801,
             images = listOf(VehicleImage(uri = "img.classistatic.de/api/v1/mo-prod/images/3caae5b2-ef50-4bbd-945b-563f7237a04d"))
         )
         val expectedDomainModel = listOf(
@@ -72,8 +71,7 @@ class VehicleGalleryUseCaseTest {
     fun `test getVehicleGalleryImages should return empty list for empty vehicle images`() = runBlocking {
         // Given
         val emptyVehicleDto = VehicleDto(
-            title = "Test Vehicle",
-            price = null,
+            id = 285041801,
             images = emptyList()
         )
         coEvery { vehicleRepository.loadVehicle() } returns Result.success(emptyVehicleDto)

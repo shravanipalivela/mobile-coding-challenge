@@ -87,7 +87,6 @@ class VehicleRepositoryApiServiceIntegrationTest {
         // Then
         assertTrue(result.isSuccess)
         val vehicle = result.getOrThrow()
-        assertEquals(vehicle.title,"Test Car")
         assertEquals(vehicle.images?.get(0)?.uri,"img.classistatic.de/api/v1/mo-prod/images/test-image-id")
 
     }
